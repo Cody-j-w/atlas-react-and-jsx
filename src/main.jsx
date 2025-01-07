@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Section from './components/Section';
 import HelpfulResource from './components/HelpfulResource';
 import AboutMe from './components/AboutMe';
+import Footer from './components/Footer';
 
 function App() {
     return <div className="app">
@@ -36,6 +37,7 @@ function App() {
             <HelpfulResource label='React Reference Documentation' link='https://react.dev/reference/react' />
         </Section>
         <AboutMe />
+        <Footer />
     </div>
 }
 const div = document.getElementById('root');
