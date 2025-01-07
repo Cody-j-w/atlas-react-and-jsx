@@ -2,6 +2,8 @@ import ReactDOM from 'react-dom/client';
 import "./index.css";
 import Header from './components/Header';
 import Section from './components/Section';
+import HelpfulResource from './components/HelpfulResource';
+import AboutMe from './components/AboutMe';
 
 function App() {
     return <div className="app">
@@ -28,6 +30,12 @@ function App() {
                 </li>
             </ul>
         </Section>
+        <Section title='Helpful Resources' >
+            <HelpfulResource label='React Quick Start' link='https://react.dev/learn' />
+            <HelpfulResource label='W3schools React Tutorial' link='https://www.w3schools.com/REACT/default.asp' />
+            <HelpfulResource label='React Reference Documentation' link='https://react.dev/reference/react' />
+        </Section>
+        <AboutMe />
     </div>
 }
 const div = document.getElementById('root');
